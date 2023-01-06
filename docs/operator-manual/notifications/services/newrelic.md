@@ -44,11 +44,11 @@ metadata:
 ## Templates
 
 * `description` - __optional__, high-level description of this deployment, visible in the [Summary](https://docs.newrelic.com/docs/apm/applications-menu/monitoring/apm-overview-page) page and on the [Deployments](https://docs.newrelic.com/docs/apm/applications-menu/events/deployments-page) page when you select an individual deployment.
-  * Defaults to `message`
+    * Defaults to `message`
 * `changelog` - __optional__, A summary of what changed in this deployment, visible in the [Deployments](https://docs.newrelic.com/docs/apm/applications-menu/events/deployments-page) page when you select (selected deployment) > Change log.
-  * Defaults to `{{(call .repo.GetCommitMetadata .app.status.sync.revision).Message}}`
+    * Defaults to `{{(call .repo.GetCommitMetadata .app.status.sync.revision).Message}}`
 * `user` - __optional__, A username to associate with the deployment, visible in the [Summary](https://docs.newrelic.com/docs/apm/applications-menu/events/deployments-page) and on the [Deployments](https://docs.newrelic.com/docs/apm/applications-menu/events/deployments-page).
-  * Defaults to `{{(call .repo.GetCommitMetadata .app.status.sync.revision).Author}}`
+    * Defaults to `{{(call .repo.GetCommitMetadata .app.status.sync.revision).Author}}`
 
 ```yaml
 context: |

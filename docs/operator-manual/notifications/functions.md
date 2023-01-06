@@ -65,15 +65,14 @@ Returns application details. `AppDetail` fields:
 
 * `Type string` - AppDetail type
 * `Helm HelmAppSpec` - Helm details
-  * Fields :
-    * `Name string`
-    * `ValueFiles []string`
-    * `Parameters []*v1alpha1.HelmParameter`
-    * `Values string`
-    * `FileParameters []*v1alpha1.HelmFileParameter`
-  * Methods :
-    * `GetParameterValueByName(Name string)` Retrieve value by name in Parameters field
-    * `GetFileParameterPathByName(Name string)` Retrieve path by name in FileParameters field
-*
+    * Fields :
+        * `Name string`
+        * `ValueFiles []string`
+        * `Parameters []*v1alpha1.HelmParameter`
+        * `Values string`
+        * `FileParameters []*v1alpha1.HelmFileParameter`
+    * Methods :
+        * `GetParameterValueByName(Name string)` Retrieve value by name in Parameters field
+        * `GetFileParameterPathByName(Name string)` Retrieve path by name in FileParameters field
 * `Kustomize *apiclient.KustomizeAppSpec` - Kustomize details
 * `Directory *apiclient.DirectoryAppSpec` - Directory details
